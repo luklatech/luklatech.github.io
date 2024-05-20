@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+	<head>
+		<title>TechLand</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui" />
+
+		<meta name="theme-color" content="#056EB9" />
+		<meta name="msapplication-navbutton-color" content="#056EB9" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#056EB9" />
+
+		<!-- Favicons
+		================================================== -->
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+		<!-- Critical styles
+		================================================== -->
+		<link rel="stylesheet" href="css/critical.min.css" type="text/css">
+
+		<!-- Load google font
+		================================================== -->
+		<script type="text/javascript">
+			WebFontConfig = {
+				google: { families: [ 'Nunito+Sans:400,400i,700,700i,800,800i,900,900i', 'Quicksand:300,400,700'] }
+			};
+			(function() {
+				var wf = document.createElement('script');
+				wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+				wf.type = 'text/javascript';
+				wf.async = 'true';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(wf, s);
+			})();
+		</script>
+
+		<!-- Load other scripts
+		================================================== -->
+		<script type="text/javascript">
+			var _html = document.documentElement,
+				isTouch = (('ontouchstart' in _html) || (navigator.msMaxTouchPoints > 0) || (navigator.maxTouchPoints));
+
+			_html.className = _html.className.replace("no-js","js");
+			_html.classList.add( isTouch ? "touch" : "no-touch");
+		</script>
+		<script type="text/javascript" src="js/device.min.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<!-- start main -->
+			<main role="main">
+				<!-- Common styles
+				================================================== -->
+				<link rel="stylesheet" href="css/style.min.css" type="text/css">
+
+				<!-- Load lazyLoad scripts
+				================================================== -->
+				<script>
+					(function(w, d){
+						var m = d.getElementsByTagName('main')[0],
+							s = d.createElement("script"),
+							v = !("IntersectionObserver" in w) ? "8.17.0" : "11.0.6",
+							o = {
+								elements_selector: ".lazy",
+								threshold: 500,
+								callback_enter: function (element) {
+
+								},
+								callback_load: function (element) {
+
+								},
+								callback_set: function (element) {
+
+									oTimeout = setTimeout(function ()
+									{
+										clearTimeout(oTimeout);
+
+										AOS.refresh();
+									}, 1000);
+								},
+								callback_error: function(element) {
+									element.src = "https://placeholdit.imgix.net/~text?txtsize=21&txt=Image%20not%20load&w=200&h=200";
+								}
+							};
+						s.type = 'text/javascript';
+						s.async = false; // This includes the script as async. See the "recipes" section for more information about async loading of LazyLoad.
+						s.src = "https://cdn.jsdelivr.net/npm/vanilla-lazyload@" + v + "/dist/lazyload.min.js";
+						m.appendChild(s);
+						// m.insertBefore(s, m.firstChild);
+						w.lazyLoadOptions = o;
+					}(window, document));
+				</script>
+
+				<!-- start section -->
+				<section class="section">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<div class="authorization authorization--registration">
+									<!-- this is demo, remove div class row and div's class col -->
+									<div class="row justify-content-md-center">
+										<div class="col-12 col-md-6 col-lg-4">
+											<div class="text-center">
+												<a class="site-logo" href="index.html">
+													<img class="img-fluid" width="159" height="45" src="img/site_logo/logo_2.png" alt="demo" />
+												</a>
+											</div>
+
+											<form class="authorization__form authorization__form--shadow" action="#">
+												<h3 class="__title">Sign Up</h3>
+
+												<div class="input-wrp">
+													<input class="textfield textfield--grey" type="text" value="" placeholder="Full Name" />
+												</div>
+
+												<div class="input-wrp">
+													<input class="textfield textfield--grey" type="text" value="" placeholder="Email" inputmode="email" x-inputmode="email" />
+												</div>
+
+												<div class="input-wrp">
+													<input class="textfield textfield--grey" type="text" value="" placeholder="Password" />
+												</div>
+
+												<div class="input-wrp">
+													<input class="textfield textfield--grey" type="text" value="" placeholder="Confirm Password" />
+												</div>
+
+												<p>
+													<label class="checkbox mt-0">
+														<input name="p1" type="checkbox" value="ok" required />
+														<i class="fontello-check"></i><span>I agree with <a href="#">Terms of Services</a></span>
+													</label>
+												</p>
+
+												<button class="custom-btn custom-btn--medium custom-btn--style-1 wide" type="submit" role="button">Submit</button>
+
+												<p class="text-center"><a href="sign_in.html">Sign In</a> if you don’t have an account</p>
+											</form>
+										</div>
+
+										<div class="spacer d-md-none py-6"></div>
+
+										<div class="col-12 col-md-6 col-lg-4">
+											<div class="text-center">
+												<a class="site-logo" href="index.html">
+													<img class="img-fluid" width="159" height="45" src="img/site_logo/logo_2.png" alt="demo" />
+												</a>
+											</div>
+
+											<form class="authorization__form authorization__form--shadow" action="#">
+												<h3 class="__title">Sign Up</h3>
+
+												<p class="text-center">
+													We sent the code to your email address. Please, check your inbox or spam folder.
+												</p>
+
+												<div class="input-wrp">
+													<input class="textfield textfield--grey" type="text" value="" placeholder="Enter PIN" />
+												</div>
+
+												<button class="custom-btn custom-btn--medium custom-btn--style-1 wide" type="submit" role="button">Submit</button>
+											</form>
+
+											<br>
+
+											<form id="recovery" class="authorization__form authorization__form--shadow" action="#">
+												<h3 class="__title">Password Recovery</h3>
+
+												<div class="input-wrp">
+													<input class="textfield textfield--grey" type="text" value="" placeholder="Enter PIN" />
+												</div>
+
+												<button class="custom-btn custom-btn--medium custom-btn--style-1 wide" type="submit" role="button">Submit</button>
+
+												<p class="text-center">Back to <a href="sign_in.html">Sign In</a></p>
+											</form>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end section -->
+			</main>
+			<!-- end main -->
+		</div>
+
+		<div id="btn-to-top-wrap">
+			<a id="btn-to-top" class="circled" href="javascript:void(0);" data-visible-offset="800"></a>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-2.2.4.min.js"><\/script>')</script>
+
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="js/main.min.js"></script>
+		
+	</body>
+</html>

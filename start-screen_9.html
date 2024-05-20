@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+	<head>
+		<title>TechLand</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui" />
+
+		<meta name="theme-color" content="#5EC05A" />
+		<meta name="msapplication-navbutton-color" content="#5EC05A" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#5EC05A" />
+
+		<!-- Favicons
+		================================================== -->
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+		<!-- Critical styles
+		================================================== -->
+		<link rel="stylesheet" href="css/critical.min.css" type="text/css">
+
+		<!-- Load google font
+		================================================== -->
+		<script type="text/javascript">
+			WebFontConfig = {
+				google: { families: [ 'Nunito+Sans:400,400i,700,700i,800,800i,900,900i', 'Quicksand:300,400,700'] }
+			};
+			(function() {
+				var wf = document.createElement('script');
+				wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+				wf.type = 'text/javascript';
+				wf.async = 'true';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(wf, s);
+			})();
+		</script>
+
+		<!-- Load other scripts
+		================================================== -->
+		<script type="text/javascript">
+			var _html = document.documentElement,
+				isTouch = (('ontouchstart' in _html) || (navigator.msMaxTouchPoints > 0) || (navigator.maxTouchPoints));
+
+			_html.className = _html.className.replace("no-js","js");
+			_html.classList.add( isTouch ? "touch" : "no-touch");
+		</script>
+		<script type="text/javascript" src="js/device.min.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<!-- start header -->
+			<header id="top-bar" class="top-bar top-bar--light" data-nav-anchor="false">
+				<div class="top-bar__inner">
+					<div class="container-fluid">
+						<div class="row align-items-center no-gutters">
+
+							<a class="top-bar__logo site-logo" href="index.html">
+								<img class="img-fluid" src="img/site_logo/logo_1.png" width="159" height="45" alt="demo" />
+							</a>
+
+							<a id="top-bar__navigation-toggler" class="top-bar__navigation-toggler" href="javascript:void(0);">
+								<span></span>
+							</a>
+
+							<div class="top-bar__collapse">
+								<nav id="top-bar__navigation" class="top-bar__navigation" role="navigation">
+									<ul>
+										<li>
+											<a class="nav-link active" href="index.html#start-screen">Home</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="index.html#services">Services</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="index.html#pricing">Pricing</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="index.html#features">Features</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="index.html#team">Team</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="index.html#testimonials">Testimonials</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="index.html#blog">Blog</a>
+										</li>
+
+										<li class="has-submenu">
+											<a class="nav-link" href="javascript:void(0);">Pages</a>
+
+											<ul class="submenu">
+												<li class="has-submenu">
+													<a href="javascript:void(0)">UI Kit</a>
+
+													<ul class="submenu">
+														<li><a href="headers.html">Headers</a></li>
+														<li><a href="footers.html">Footers</a></li>
+														<li><a href="about_us.html">About</a></li>
+														<li><a href="blogs.html">Blogs</a></li>
+														<li><a href="services.html">Services</a></li>
+														<li><a href="video.html">Video</a></li>
+														<li><a href="features.html">Features</a></li>
+														<li><a href="projects.html">Projects</a></li>
+														<li><a href="pricing_tables.html">Pricing Tables</a></li>
+														<li><a href="how_it_works.html">How it Works</a></li>
+														<li><a href="infoblock.html">Info Block</a></li>
+														<li><a href="testimonials.html">Teatimonials</a></li>
+														<li><a href="team.html">Team</a></li>
+														<li><a href="faq.html">FAQ</a></li>
+														<li><a href="subscribe.html">Subscribe</a></li>
+														<li><a href="get_in_touch.html">Get in Touch</a></li>
+													</ul>
+												</li>
+												<li><a href="blog.html">Blog</a></li>
+												<li><a href="blog_details.html">Blog Details</a></li>
+												<li><a href="sign_in.html">Sign In</a></li>
+												<li><a href="sign_up.html">Sign Up</a></li>
+												<li><a href="typography.html">Typography</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+
+								<div id="top-bar__action" class="top-bar__action">
+									<div class="d-xl-flex flex-xl-row flex-xl-wrap align-items-xl-center">
+										<div class="top-bar__choose-lang js-choose-lang">
+											<div class="current-lang">
+												<i><img class="circled" width="25" height="25" src="img/ico/flag/1.png" alt="demo" /></i>
+												<span>En</span>
+											</div>
+
+											<div class="list-wrap">
+												<ul class="list">
+													<li data-short-name="En" data-img="img/ico/flag/1.png" class="is-active"><span>English</span></li>
+													<li data-short-name="Ru" data-img="img/ico/flag/2.png"><span>Russian</span></li>
+													<li data-short-name="Ge" data-img="img/ico/flag/3.png"><span>German</span></li>
+													<li data-short-name="Sp" data-img="img/ico/flag/4.png"><span>Spanish</span></li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="top-bar__auth-btns">
+											<a href="sign_in.html">Sign In</a>
+
+											<a class="custom-btn custom-btn--medium custom-btn--style-4" href="#">Get in Touch</a>
+										</div>
+
+										<div class="top-bar__side-menu-button js-side-menu-open">
+											<span class="line"></span>
+											<span class="line"></span>
+											<span class="line"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- end header -->
+
+			<!-- start side menu -->
+			<div id="side-menu" class="side-menu  d-none">
+				<span class="side-menu__button-close  js-side-menu-close"></span>
+
+				<div class="side-menu__inner">
+					<div>
+						<img class="img-fluid lazy" src="img/blank.gif" data-src="img/site_logo/logo_1.png" width="159" height="45" alt="demo" />
+					</div>
+
+					<ul class="side-menu__menu">
+						<li class="active"><a href="#">Documents</a></li>
+						<li><a href="#">Aditional Info</a></li>
+						<li><a href="#">Application</a></li>
+						<li><a href="#">Useful Link</a></li>
+					</ul>
+
+					<address class="side-menu__address">
+						113 Fulton Street, Suite 721
+						New York, NY 10010 <br>
+						<a href="mailto:youremail@yourdomain.com">youremail@yourdomain.com</a> <br>
+						<a href="#">+88 (0) 101 0000 000</a>
+
+						<div class="s-btns s-btns--md s-btns--colored s-btns--rounded">
+							<ul class="d-flex flex-row flex-wrap align-items-center">
+								<li><a class="f" href="#"><i class="fontello-facebook"></i></a></li>
+								<li><a class="t" href="#"><i class="fontello-twitter"></i></a></li>
+								<li><a class="y" href="#"><i class="fontello-youtube-play"></i></a></li>
+								<li><a class="i" href="#"><i class="fontello-instagram"></i></a></li>
+							</ul>
+						</div>
+					</address>
+
+					<div>
+						<a class="custom-btn custom-btn--medium custom-btn--style-5" href="#">Purchase</a>
+					</div>
+				</div>
+			</div>
+			<!-- end side menu -->
+
+			<!-- start start screen -->
+			<div id="start-screen" class="start-screen start-screen--style-9">
+				<div class="start-screen__bg-container">
+					<div class="start-screen__bg" style="background-image: url(img/start-screen_img/start-screen_9/bg_1.jpg);background-position: center bottom;"></div>
+				</div>
+
+				<div class="start-screen__content-container">
+					<div class="start-screen__content__item align-items-sm-center text-center">
+						<div class="container">
+							<div class="row justify-content-md-center">
+								<div class="col-12 col-md-10 col-lg-8 col-xl-6">
+									<div class="d-none d-md-block">
+										<div class="__site-name text-white">TechLand</div>
+									</div>
+
+									<h1 class="text-white">Best VPN <span>Services</span></h1>
+
+									<p class="text-white">
+										Vimba, zebrafish yellow and black triplefin guitarfish Redfin perch tripod fish zebra lionfish, nase slickhead! Jewelfish angler Devario
+									</p>
+
+									<div class="spacer py-2 py-sm-4"></div>
+
+									<form class="form--horizontal" action="#">
+										<div class="row no-gutters">
+											<div class="col-12 col-sm">
+												<div class="input-wrp">
+													<input class="textfield textfield--light" placeholder="Email" type="text" inputmode="email" x-inputmode="email" />
+												</div>
+											</div>
+
+											<div class="col-12 col-sm-auto">
+												<button class="custom-btn custom-btn--medium custom-btn--style-5 wide" type="submit" role="button">Subscribe</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end start screen -->
+
+			<!-- start main -->
+			<main role="main">
+				<!-- Common styles
+				================================================== -->
+				<link rel="stylesheet" href="css/style.min.css" type="text/css">
+
+				<!-- Theme styles
+				================================================== -->
+				<!-- <link rel="stylesheet" href="css/color-3.min.css" type="text/css"> -->
+
+				<!-- Load lazyLoad scripts
+				================================================== -->
+				<script>
+					(function(w, d){
+						var m = d.getElementsByTagName('main')[0],
+							s = d.createElement("script"),
+							v = !("IntersectionObserver" in w) ? "8.17.0" : "11.0.6",
+							o = {
+								elements_selector: ".lazy",
+								threshold: 500,
+								callback_enter: function (element) {
+
+								},
+								callback_load: function (element) {
+
+								},
+								callback_set: function (element) {
+
+									oTimeout = setTimeout(function ()
+									{
+										clearTimeout(oTimeout);
+
+										AOS.refresh();
+									}, 1000);
+								},
+								callback_error: function(element) {
+									element.src = "https://placeholdit.imgix.net/~text?txtsize=21&txt=Image%20not%20load&w=200&h=200";
+								}
+							};
+						s.type = 'text/javascript';
+						s.async = false; // This includes the script as async. See the "recipes" section for more information about async loading of LazyLoad.
+						s.src = "https://cdn.jsdelivr.net/npm/vanilla-lazyload@" + v + "/dist/lazyload.min.js";
+						m.appendChild(s);
+						// m.insertBefore(s, m.firstChild);
+						w.lazyLoadOptions = o;
+					}(window, document));
+				</script>
+			</main>
+			<!-- end main -->
+		</div>
+
+		<div id="btn-to-top-wrap">
+			<a id="btn-to-top" class="circled" href="javascript:void(0);" data-visible-offset="800"></a>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-2.2.4.min.js"><\/script>')</script>
+
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="js/main.min.js"></script>
+		
+	</body>
+</html>

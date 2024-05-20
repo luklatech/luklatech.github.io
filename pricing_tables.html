@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+	<head>
+		<title>TechLand</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui" />
+
+		<meta name="theme-color" content="#056EB9" />
+		<meta name="msapplication-navbutton-color" content="#056EB9" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#056EB9" />
+
+		<!-- Favicons
+		================================================== -->
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+		<!-- Critical styles
+		================================================== -->
+		<link rel="stylesheet" href="css/critical.min.css" type="text/css">
+
+		<!-- Load google font
+		================================================== -->
+		<script type="text/javascript">
+			WebFontConfig = {
+				google: { families: [ 'Nunito+Sans:400,400i,700,700i,800,800i,900,900i', 'Quicksand:300,400,700'] }
+			};
+			(function() {
+				var wf = document.createElement('script');
+				wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+				wf.type = 'text/javascript';
+				wf.async = 'true';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(wf, s);
+			})();
+		</script>
+
+		<!-- Load other scripts
+		================================================== -->
+		<script type="text/javascript">
+			var _html = document.documentElement,
+				isTouch = (('ontouchstart' in _html) || (navigator.msMaxTouchPoints > 0) || (navigator.maxTouchPoints));
+
+			_html.className = _html.className.replace("no-js","js");
+			_html.classList.add( isTouch ? "touch" : "no-touch");
+		</script>
+		<script type="text/javascript" src="js/device.min.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<!-- start header -->
+			<header id="top-bar" class="top-bar top-bar--light" data-nav-anchor="false">
+				<div class="top-bar__inner">
+					<div class="container-fluid">
+						<div class="row align-items-center no-gutters">
+
+							<a class="top-bar__logo site-logo" href="index.html">
+								<img class="img-fluid" src="img/site_logo/logo_1.png" width="159" height="45" alt="demo" />
+							</a>
+
+							<a id="top-bar__navigation-toggler" class="top-bar__navigation-toggler" href="javascript:void(0);">
+								<span></span>
+							</a>
+
+							<div class="top-bar__collapse">
+								<nav id="top-bar__navigation" class="top-bar__navigation" role="navigation">
+									<ul>
+										<li>
+											<a class="nav-link" href="index.html#start-screen">Home</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="index.html#services">Services</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="index.html#pricing">Pricing</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="index.html#features">Features</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="index.html#team">Team</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="index.html#testimonials">Testimonials</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="index.html#blog">Blog</a>
+										</li>
+
+										<li class="has-submenu">
+											<a class="nav-link active" href="javascript:void(0);">Pages</a>
+
+											<ul class="submenu">
+												<li class="has-submenu">
+													<a class="active" href="javascript:void(0)">UI Kit</a>
+
+													<ul class="submenu">
+														<li><a href="headers.html">Headers</a></li>
+														<li><a href="footers.html">Footers</a></li>
+														<li><a href="about_us.html">About</a></li>
+														<li><a href="blogs.html">Blogs</a></li>
+														<li><a href="services.html">Services</a></li>
+														<li><a href="video.html">Video</a></li>
+														<li><a href="features.html">Features</a></li>
+														<li><a href="projects.html">Projects</a></li>
+														<li><a class="active" href="pricing_tables.html">Pricing Tables</a></li>
+														<li><a href="how_it_works.html">How it Works</a></li>
+														<li><a href="infoblock.html">Info Block</a></li>
+														<li><a href="testimonials.html">Teatimonials</a></li>
+														<li><a href="team.html">Team</a></li>
+														<li><a href="faq.html">FAQ</a></li>
+														<li><a href="subscribe.html">Subscribe</a></li>
+														<li><a href="get_in_touch.html">Get in Touch</a></li>
+													</ul>
+												</li>
+												<li><a href="blog.html">Blog</a></li>
+												<li><a href="blog_details.html">Blog Details</a></li>
+												<li><a href="sign_in.html">Sign In</a></li>
+												<li><a href="sign_up.html">Sign Up</a></li>
+												<li><a href="typography.html">Typography</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+
+								<div id="top-bar__action" class="top-bar__action">
+									<div class="d-xl-flex flex-xl-row flex-xl-wrap align-items-xl-center">
+										<div class="top-bar__choose-lang js-choose-lang">
+											<div class="current-lang">
+												<i><img class="circled" width="25" height="25" src="img/ico/flag/1.png" alt="demo" /></i>
+												<span>En</span>
+											</div>
+
+											<div class="list-wrap">
+												<ul class="list">
+													<li data-short-name="En" data-img="img/ico/flag/1.png" class="is-active"><span>English</span></li>
+													<li data-short-name="Ru" data-img="img/ico/flag/2.png"><span>Russian</span></li>
+													<li data-short-name="Ge" data-img="img/ico/flag/3.png"><span>German</span></li>
+													<li data-short-name="Sp" data-img="img/ico/flag/4.png"><span>Spanish</span></li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="top-bar__auth-btns">
+											<a href="sign_in.html">Sign In</a>
+
+											<a class="custom-btn custom-btn--medium custom-btn--style-5" href="index.html#get_in_touch">Get in Touch</a>
+										</div>
+
+										<div class="top-bar__side-menu-button js-side-menu-open">
+											<span class="line"></span>
+											<span class="line"></span>
+											<span class="line"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- end header -->
+
+			<!-- start side menu -->
+			<div id="side-menu" class="side-menu  d-none">
+				<span class="side-menu__button-close  js-side-menu-close"></span>
+
+				<div class="side-menu__inner">
+					<div>
+						<img class="img-fluid lazy" src="img/blank.gif" data-src="img/site_logo/logo_1.png" width="159" height="45" alt="demo" />
+					</div>
+
+					<ul class="side-menu__menu">
+						<li class="active"><a href="#">Documents</a></li>
+						<li><a href="#">Aditional Info</a></li>
+						<li><a href="#">Application</a></li>
+						<li><a href="#">Useful Link</a></li>
+					</ul>
+
+					<address class="side-menu__address">
+						113 Fulton Street, Suite 721
+						New York, NY 10010 <br>
+						<a href="mailto:youremail@yourdomain.com">youremail@yourdomain.com</a> <br>
+						<a href="#">+88 (0) 101 0000 000</a>
+
+						<div class="s-btns s-btns--md s-btns--colored s-btns--rounded">
+							<ul class="d-flex flex-row flex-wrap align-items-center">
+								<li><a class="f" href="#"><i class="fontello-facebook"></i></a></li>
+								<li><a class="t" href="#"><i class="fontello-twitter"></i></a></li>
+								<li><a class="y" href="#"><i class="fontello-youtube-play"></i></a></li>
+								<li><a class="i" href="#"><i class="fontello-instagram"></i></a></li>
+							</ul>
+						</div>
+					</address>
+
+					<div>
+						<a class="custom-btn custom-btn--medium custom-btn--style-5" href="#">Purchase</a>
+					</div>
+				</div>
+			</div>
+			<!-- end side menu -->
+
+			<!-- start hero -->
+			<div id="hero" class="hero jarallax" data-speed="0.7" data-img-position="50% 90%" style="background-image: url(img/hero_img/1.jpg);">
+				<div class="container">
+					<h1 class="hero__title"><span>Pricing Tables</span></h1>
+				</div>
+			</div>
+			<!-- end hero -->
+
+			<!-- start main -->
+			<main role="main">
+				<!-- Common styles
+				================================================== -->
+				<link rel="stylesheet" href="css/style.min.css" type="text/css">
+
+				<!-- Load lazyLoad scripts
+				================================================== -->
+				<script>
+					(function(w, d){
+						var m = d.getElementsByTagName('main')[0],
+							s = d.createElement("script"),
+							v = !("IntersectionObserver" in w) ? "8.17.0" : "11.0.6",
+							o = {
+								elements_selector: ".lazy",
+								threshold: 500,
+								callback_enter: function (element) {
+
+								},
+								callback_load: function (element) {
+
+								},
+								callback_set: function (element) {
+
+									oTimeout = setTimeout(function ()
+									{
+										clearTimeout(oTimeout);
+
+										AOS.refresh();
+									}, 1000);
+								},
+								callback_error: function(element) {
+									element.src = "https://placeholdit.imgix.net/~text?txtsize=21&txt=Image%20not%20load&w=200&h=200";
+								}
+							};
+						s.type = 'text/javascript';
+						s.async = false; // This includes the script as async. See the "recipes" section for more information about async loading of LazyLoad.
+						s.src = "https://cdn.jsdelivr.net/npm/vanilla-lazyload@" + v + "/dist/lazyload.min.js";
+						m.appendChild(s);
+						// m.insertBefore(s, m.firstChild);
+						w.lazyLoadOptions = o;
+					}(window, document));
+				</script>
+
+				<!-- start section -->
+				<section class="section section--light-blue-bg">
+					<div class="container">
+						<div class="section-heading section-heading--center">
+							<h6 class="__subtitle">Pricing</h6>
+
+							<h2 class="__title">Pricing Plans <span>for Our App</span></h2>
+
+							<p>
+								Carpsucker surgeonfish streamer fish boga deepwater stingray.  Minnow arrowtooth 
+							</p>
+						</div>
+
+						<div class="spacer py-6"></div>
+
+						<div class="row">
+							<div class="col-12">
+
+								<div class="content-container">
+									<!-- start pricing table -->
+									<div class="pricing-table pricing-table--s1">
+										<div class="__inner">
+											<div class="row justify-content-sm-center justify-content-md-start">
+												<!-- start item -->
+												<div class="col-12 col-sm-9 col-md-6 col-lg-4 d-sm-flex">
+													<div class="__item __item--rounded js-tilt" data-tilt-speed="800" data-tilt-max="25" data-tilt-perspective="1000">
+														<div class="__header">
+															<div class="__title h4">Free</div>
+
+															<div class="__price"><sup>$</sup>0<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list">
+																<li>Increase traffic 100%</li>
+																<li>Web site Analysis</li>
+																<li>Content Optimization</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+
+												<!-- start item -->
+												<div class="col-12 col-sm-9 col-md-6 col-lg-4 d-sm-flex">
+													<div class="__item __item--rounded js-tilt" data-tilt-speed="800" data-tilt-max="25" data-tilt-perspective="1000">
+														<div class="__header">
+															<div class="__title h4">Standart</div>
+
+															<div class="__price"><sup>$</sup>50<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list">
+																<li>Increase traffic 100%</li>
+																<li>Web site Analysis</li>
+																<li>Content Optimization</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+
+												<!-- start item -->
+												<div class="col-12 col-sm-9 col-md-6 col-lg-4 d-sm-flex">
+													<div class="__item __item--rounded js-tilt" data-tilt-speed="800" data-tilt-max="25" data-tilt-perspective="1000">
+														<div class="__header">
+															<div class="__title h4">Premium</div>
+
+															<div class="__price"><sup>$</sup>199<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list">
+																<li>Increase traffic 100%</li>
+																<li>Web site Analysis</li>
+																<li>Content Optimization</li>
+																<li>10 Free Optimization</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+											</div>
+										</div>
+									</div>
+									<!-- end pricing table -->
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section section--bg-img jarallax" data-speed="0.3" data-img-position="50% 50%" style="background-image: url(img/base_bg.jpg);">
+					<div class="container">
+						<div class="section-heading section-heading--white section-heading--center">
+							<h6 class="__subtitle">Pricing</h6>
+
+							<h2 class="__title">Pricing Plans <span>for Digital Marketing</span></h2>
+						</div>
+
+						<div class="spacer py-6"></div>
+
+						<div class="row">
+							<div class="col-12">
+
+								<div class="content-container">
+									<!-- start pricing table -->
+									<div class="pricing-table pricing-table--s2">
+										<div class="__inner">
+											<div class="row justify-content-sm-center justify-content-md-start">
+												<!-- start item -->
+												<div class="col-12 col-sm-9 col-md-6 col-lg-4 d-sm-flex">
+													<div class="__item __item--rounded __item--shadow" style="background-image: url(img/pricing_img/bg_1.png);background-repeat: no-repeat;background-position: top left">
+														<div class="__header">
+															<div class="__title h4">Simple</div>
+
+															<div class="__price"><sup>$</sup>0<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list check-list">
+																<li><i class="ico-checked fontello-ok"></i>Increase traffic 100%</li>
+																<li><i class="ico-checked fontello-ok"></i>Web site Analysis</li>
+																<li><i class="ico-checked fontello-ok"></i>Content Optimization</li>
+																<li><i class="ico-checked fontello-ok"></i>10 Free Optimization</li>
+																<li><i class="ico-unchecked fontello-minus"></i>Online 24/7 support</li>
+																<li><i class="ico-unchecked fontello-minus"></i>Free Simple Website</li>
+																<li><i class="ico-unchecked fontello-minus"></i>Monthly Gifts</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+
+												<!-- start item -->
+												<div class="col-12 col-sm-9 col-md-6 col-lg-4 d-sm-flex">
+													<div class="__item __item--rounded __item--shadow __item--active" style="background-image: url(img/pricing_img/bg_2.png);background-repeat: no-repeat;background-position: top right">
+														<div class="__header">
+															<span class="__label">Best choice</span>
+
+															<div class="__title h4">Optimal</div>
+
+															<div class="__price"><sup>$</sup>99<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list check-list">
+																<li><i class="ico-checked fontello-ok"></i>Increase traffic 100%</li>
+																<li><i class="ico-checked fontello-ok"></i>Web site Analysis</li>
+																<li><i class="ico-checked fontello-ok"></i>Content Optimization</li>
+																<li><i class="ico-checked fontello-ok"></i>10 Free Optimization</li>
+																<li><i class="ico-checked fontello-ok"></i>Online 24/7 support</li>
+																<li><i class="ico-checked fontello-ok"></i>Free Simple Website</li>
+																<li><i class="ico-unchecked fontello-minus"></i>Monthly Gifts</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+
+												<!-- start item -->
+												<div class="col-12 col-sm-9 col-md-6 col-lg-4 d-sm-flex">
+													<div class="__item __item--rounded __item--shadow" style="background-image: url(img/pricing_img/bg_3.png);background-repeat: no-repeat;background-position: top right">
+														<div class="__header">
+															<div class="__title h4">Premium</div>
+
+															<div class="__price"><sup>$</sup>199<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list check-list">
+																<li><i class="ico-checked fontello-ok"></i>Increase traffic 100%</li>
+																<li><i class="ico-checked fontello-ok"></i>Web site Analysis</li>
+																<li><i class="ico-checked fontello-ok"></i>Content Optimization</li>
+																<li><i class="ico-checked fontello-ok"></i>10 Free Optimization</li>
+																<li><i class="ico-checked fontello-ok"></i>Online 24/7 support</li>
+																<li><i class="ico-checked fontello-ok"></i>Free Simple Website</li>
+																<li><i class="ico-checked fontello-ok"></i>Monthly Gifts</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+											</div>
+										</div>
+									</div>
+									<!-- end pricing table -->
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="shape">
+						<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="450" viewBox="0 0 1680 450" preserveAspectRatio="none" style="min-height: 300px">
+							<path d="M0 3s561.937 57 842 55c286 0 484-18 839-58v450H-2z" style="mix-blend-mode:screen" fill="#fff" fill-rule="evenodd"/>
+						</svg>
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section section--no-pt">
+					<div class="container">
+						<div class="section-heading section-heading--center">
+							<h6 class="__subtitle">Pricing</h6>
+
+							<h2 class="__title">Pricing Plans<br><span>for Digital Marketing</span></h2>
+						</div>
+
+						<div class="spacer py-6"></div>
+
+						<div class="row">
+							<div class="col-12">
+
+								<div class="content-container">
+									<!-- start pricing table -->
+									<div class="pricing-table pricing-table--s3">
+										<div class="__inner">
+											<div class="row justify-content-sm-center justify-content-md-start">
+												<!-- start item -->
+												<div class="col-12 col-sm-9 col-md-6 col-lg-3 d-sm-flex">
+													<div class="__item __item--rounded __item--bordered __item--color-1">
+														<div class="__header">
+															<div class="__title h4">Free</div>
+
+															<div class="__price"><sup>$</sup>0<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list">
+																<li><span class="__value">0.5 KH/s</span></li>
+																<li>
+																	Maintenance Fees per<br> GH/s/day<span class="__value">$ 0.299</span>
+																</li>
+																<li>
+																	Contract duration<span class="__value">24 months</span>
+																</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+
+												<!-- start item -->
+												<div class="col-12 col-sm-9 col-md-6 col-lg-3 d-sm-flex">
+													<div class="__item __item--rounded __item--bordered __item--color-2">
+														<div class="__header">
+															<div class="__title h4">Optimal</div>
+
+															<div class="__price"><sup>$</sup>9.99<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list">
+																<li><span class="__value">0.5 KH/s</span></li>
+																<li>
+																	Maintenance Fees per<br> GH/s/day<span class="__value">$ 0.299</span>
+																</li>
+																<li>
+																	Contract duration<span class="__value">24 months</span>
+																</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+
+												<!-- start item -->
+												<div class="col-12 col-sm-9 col-md-6 col-lg-3 d-sm-flex">
+													<div class="__item __item--rounded __item--active"> <!-- __item--bordered __item--color-3 -->
+														<div class="__header">
+															<span class="__label">Best choice</span>
+
+															<div class="__title h4">Standart</div>
+
+															<div class="__price"><sup>$</sup>29.9<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list">
+																<li><span class="__value">0.5 KH/s</span></li>
+																<li>
+																	Maintenance Fees per<br> GH/s/day<span class="__value">$ 0.299</span>
+																</li>
+																<li>
+																	Contract duration<span class="__value">24 months</span>
+																</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+
+												<!-- start item -->
+												<div class="col-12 col-sm-9 col-md-6 col-lg-3 d-sm-flex">
+													<div class="__item __item--rounded __item--bordered __item--color-4">
+														<div class="__header">
+															<div class="__title h4">Premium</div>
+
+															<div class="__price"><sup>$</sup>199<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list">
+																<li><span class="__value">0.5 KH/s</span></li>
+																<li>
+																	Maintenance Fees per<br> GH/s/day<span class="__value">$ 0.299</span>
+																</li>
+																<li>
+																	Contract duration<span class="__value">24 months</span>
+																</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+											</div>
+										</div>
+									</div>
+									<!-- end pricing table -->
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section section--light-blue-bg">
+					<div class="container">
+						<div class="row align-items-lg-center justify-content-xl-between">
+							<div class="col-12 col-md-8 col-lg-4 col-xl-3">
+								<div class="section-heading section-heading--left">
+									<h6 class="__subtitle">Pricing</h6>
+
+									<h2 class="__title">Pricing Plans <span>for Digital Marketing</span></h2>
+
+									<p>
+										Carpsucker surgeonfish streamer fish boga deepwater stingray.  Minnow arrowtooth eel
+									</p>
+								</div>
+							</div>
+
+							<div class="spacer py-5 d-lg-none"></div>
+
+							<div class="col-12 col-lg-8">
+
+								<div class="content-container">
+									<!-- start pricing table -->
+									<div class="pricing-table pricing-table--s1">
+										<div class="__inner">
+											<div class="row justify-content-sm-center">
+												<!-- start item -->
+												<div class="col-12 col-sm-8 col-md-6 d-sm-flex">
+													<div class="__item __item--rounded">
+														<div class="__header">
+															<div class="__title h4">Free</div>
+
+															<div class="__price"><sup>$</sup>0<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list">
+																<li>Increase traffic 100%</li>
+																<li>Web site Analysis</li>
+																<li>Content Optimization</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+
+												<!-- start item -->
+												<div class="col-12 col-sm-8 col-md-6 d-sm-flex">
+													<div class="__item __item--rounded">
+														<div class="__header">
+															<div class="__title h4">Premium</div>
+
+															<div class="__price"><sup>$</sup>199<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list">
+																<li>Increase traffic 100%</li>
+																<li>Web site Analysis</li>
+																<li>Content Optimization</li>
+																<li>10 Free Optimization</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+											</div>
+										</div>
+									</div>
+									<!-- end pricing table -->
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section">
+					<div class="container">
+						<div class="section-heading section-heading--center">
+							<h6 class="__subtitle">Pricing</h6>
+
+							<h2 class="__title">Pricing Plans <span>for VPN</span></h2>
+						</div>
+
+						<div class="spacer py-6"></div>
+
+						<div class="row">
+							<div class="col-12">
+
+								<div class="content-container">
+									<!-- start pricing table -->
+									<div class="pricing-table pricing-table--s4" data-aos="fade" data-aos-delay="150">
+										<div class="d-none d-lg-block">
+											<table class="text-center rounded shadow">
+												<tfoot>
+													<tr>
+														<td></td>
+														<td>
+															<div class="__price"><sup>$</sup>0<sub>/mo</sub></div>
+
+															<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">Get Started</a>
+														</td>
+														<td class="active">
+															<div class="__price"><sup>$</sup>99<sub>/mo</sub></div>
+
+															<a class="custom-btn custom-btn--medium custom-btn--style-4" href="#">Get Started</a>
+														</td>
+														<td>
+															<div class="__price"><sup>$</sup>149<sub>/mo</sub></div>
+
+															<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">Get Started</a>
+														</td>
+													</tr>
+												</tfoot>
+
+												<tbody>
+													<tr>
+														<th>
+															<div class="h4">Features</div>
+														</th>
+
+														<th>
+															<div class="__header">
+																<div class="__title h4">Free</div>
+															</div>
+														</th>
+
+														<th class="active">
+															<div class="__header">
+																<div class="__title h4">Standart</div>
+															</div>
+														</th>
+
+														<th>
+															<div class="__header">
+																<div class="__title h4">Premium</div>
+															</div>
+														</th>
+													</tr>
+
+													<tr>
+														<td>Increase traffic 100%</td>
+														<td>8&nbsp;GB</td>
+														<td class="active">12&nbsp;GB</td>
+														<td>24&nbsp;GB</td>
+													</tr>
+
+													<tr>
+														<td>Web site Analysis</td>
+														<td>25&nbsp;GB</td>
+														<td class="active">55&nbsp;GB</td>
+														<td>100&nbsp;GB</td>
+													</tr>
+
+													<tr>
+														<td>Content Optimization</td>
+														<td>50&nbsp;GB</td>
+														<td class="active">132&nbsp;GB</td>
+														<td>200&nbsp;GB</td>
+													</tr>
+
+													<tr>
+														<td>10 Free Optimization</td>
+														<td>2</td>
+														<td class="active">4</td>
+														<td>16</td>
+													</tr>
+
+													<tr>
+														<td>Online 24/7 support</td>
+														<td>2&nbsp;B</td>
+														<td class="active">8&nbsp;TB</td>
+														<td>16&nbsp;TB</td>
+													</tr>
+
+													<tr>
+														<th>
+															<div class="h4">Available</div>
+														</th>
+														<th></th>
+														<th class="active"></th>
+														<th></th>
+													</tr>
+
+													<tr>
+														<td>Windows</td>
+														<td><i class="ico-checked fontello-ok"></i></td>
+														<td class="active"><i class="ico-checked fontello-ok"></i></td>
+														<td><i class="ico-checked fontello-ok"></i></td>
+													</tr>
+
+													<tr>
+														<td>MacOS</td>
+														<td><i class="ico-unchecked fontello-minus"></i></td>
+														<td class="active"><i class="ico-checked fontello-ok"></i></td>
+														<td><i class="ico-checked fontello-ok"></i></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="d-lg-none">
+											<div class="__inner">
+												<div class="row justify-content-sm-center justify-content-md-start">
+													<!-- start item -->
+													<div class="col-12 col-sm-9 col-md-6 col-lg-4 d-sm-flex">
+														<div class="__item __item--rounded __item--shadow">
+															<div class="__header">
+																<div class="__title h4">Free</div>
+															</div>
+
+															<div class="__body  pt-8 pb-8  text-left">
+																<div class="__name h5">Features</div>
+
+																<ul class="__desc-list">
+																	<li><span>8&nbsp;GB</span>Increase traffic 100%</li>
+																	<li><span>25&nbsp;GB</span>Web site Analysis</li>
+																	<li><span>50&nbsp;GB</span>Content Optimization</li>
+																	<li><span>2</span>10 Free Optimization</li>
+																	<li><span>2&nbsp;TB</span>Online 24/7 support</li>
+																</ul>
+
+																<div class="__name h5">Available</div>
+
+																<ul class="__desc-list">
+																	<li><span><i class="ico-unchecked"></i></span>Windows</li>
+																	<li><span><i class="ico-checked fontello-ok"></i></span>MacOS</li>
+																</ul>
+															</div>
+
+															<div class="__footer">
+																<div class="__price"><sup>$</sup>0<sub>/mo</sub></div>
+
+																<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">Get Started</a>
+															</div>
+														</div>
+													</div>
+													<!-- end item -->
+
+													<!-- start item -->
+													<div class="col-12 col-sm-9 col-md-6 col-lg-4 d-sm-flex">
+														<div class="__item __item--rounded __item--shadow __item--active">
+															<div class="__header">
+																<span class="__label">Best choice</span>
+
+																<div class="__title h4">Standart</div>
+															</div>
+
+															<div class="__body  pt-8 pb-8  text-left">
+																<div class="__name h5">Features</div>
+
+																<ul class="__desc-list">
+																	<li><span>12&nbsp;GB</span>Increase traffic 100%</li>
+																	<li><span>55&nbsp;GB</span>Web site Analysis</li>
+																	<li><span>132&nbsp;GB</span>Content Optimization</li>
+																	<li><span>4</span>10 Free Optimization</li>
+																	<li><span>8&nbsp;TB</span>Online 24/7 support</li>
+																</ul>
+
+																<div class="__name h5">Available</div>
+
+																<ul class="__desc-list">
+																	<li><span><i class="ico-checked fontello-ok"></i></span>Windows</li>
+																	<li><span><i class="ico-checked fontello-ok"></i></span>MacOS</li>
+																</ul>
+															</div>
+
+															<div class="__footer">
+																<div class="__price"><sup>$</sup>99<sub>/mo</sub></div>
+
+																<a class="custom-btn custom-btn--medium custom-btn--style-4" href="#">Get Started</a>
+															</div>
+														</div>
+													</div>
+													<!-- end item -->
+
+													<!-- start item -->
+													<div class="col-12 col-sm-9 col-md-6 col-lg-4 d-sm-flex">
+														<div class="__item __item--rounded __item--shadow">
+															<div class="__header">
+																<div class="__title h4">Premium</div>
+															</div>
+
+															<div class="__body  pt-8 pb-8  text-left">
+																<div class="__name h5">Features</div>
+
+																<ul class="__desc-list">
+																	<li><span>24&nbsp;GB</span>Increase traffic 100%</li>
+																	<li><span>100&nbsp;GB</span>Web site Analysis</li>
+																	<li><span>200&nbsp;GB</span>Content Optimization</li>
+																	<li><span>16</span>10 Free Optimization</li>
+																	<li><span>16&nbsp;TB</span>Online 24/7 support</li>
+																</ul>
+
+																<div class="__name h5">Available</div>
+
+																<ul class="__desc-list">
+																	<li><span><i class="ico-checked fontello-ok"></i></span>Windows</li>
+																	<li><span><i class="ico-checked fontello-ok"></i></span>MacOS</li>
+																</ul>
+															</div>
+
+															<div class="__footer">
+																<div class="__price"><sup>$</sup>149<sub>/mo</sub></div>
+
+																<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">Get Started</a>
+															</div>
+														</div>
+													</div>
+													<!-- end item -->
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- end pricing table -->
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section section--bg-img jarallax" data-speed="0.3" data-img-position="50% 50%" style="background-image: url(img/base_bg.jpg);">
+					<div class="container">
+						<div class="section-heading section-heading--white section-heading--center">
+							<h6 class="__subtitle">Pricing</h6>
+
+							<h2 class="__title">Pricing Plans <span>for Digital Marketing</span></h2>
+						</div>
+
+						<div class="spacer py-6"></div>
+
+						<div class="row">
+							<div class="col-12">
+
+								<div class="content-container">
+									<!-- start pricing table -->
+									<div class="pricing-table pricing-table--s5">
+										<div class="__inner">
+											<div class="row">
+												<!-- start item -->
+												<div class="col-12 col-sm-6 col-lg-3 d-sm-flex">
+													<div class="__item">
+														<div class="__header">
+															<div class="__title h4">Free</div>
+
+															<div class="__price" style="color: #30e3ca;"><sup>$</sup>0<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list text-left">
+																<li>Increase traffic 100%</li>
+																<li>Web site Analysis</li>
+																<li>Content Optimization</li>
+																<li>10 Free Optimization</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+
+												<!-- start item -->
+												<div class="col-12 col-sm-6 col-lg-3 d-sm-flex">
+													<div class="__item">
+														<div class="__header">
+															<div class="__title h4">Standart</div>
+
+															<div class="__price" style="color: #30e3ca;"><sup>$</sup>9.9<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list text-left">
+																<li>Increase traffic 100%</li>
+																<li>Web site Analysis</li>
+																<li>Content Optimization</li>
+																<li>10 Free Optimization</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+
+												<!-- start item -->
+												<div class="col-12 col-sm-6 col-lg-3 d-sm-flex">
+													<div class="__item">
+														<div class="__header">
+															<div class="__title h4">Optimal</div>
+
+															<div class="__price" style="color: #30e3ca;"><sup>$</sup>29.9<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list text-left">
+																<li>Increase traffic 100%</li>
+																<li>Web site Analysis</li>
+																<li>Content Optimization</li>
+																<li>10 Free Optimization</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+
+												<!-- start item -->
+												<div class="col-12 col-sm-6 col-lg-3 d-sm-flex">
+													<div class="__item">
+														<div class="__header">
+															<div class="__title h4">Premium</div>
+
+															<div class="__price" style="color: #30e3ca;"><sup>$</sup>199<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list text-left">
+																<li>Increase traffic 100%</li>
+																<li>Web site Analysis</li>
+																<li>Content Optimization</li>
+																<li>10 Free Optimization</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+											</div>
+										</div>
+									</div>
+									<!-- end pricing table -->
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section section--light-blue-bg">
+					<div class="container">
+						<div class="section-heading section-heading--center">
+							<h6 class="__subtitle">Pricing</h6>
+
+							<h2 class="__title">Pricing Plans<br><span>for Digital Marketing</span></h2>
+						</div>
+
+						<div class="spacer py-6"></div>
+
+						<div class="row">
+							<div class="col-12">
+
+								<div class="content-container">
+									<!-- start pricing table -->
+									<div class="pricing-table pricing-table--s1">
+										<div class="__inner">
+											<div class="row justify-content-sm-center">
+												<!-- start item -->
+												<div class="col-12 col-sm-9 col-md-6 col-lg-5 col-xl-3 d-sm-flex">
+													<div class="__item __item--rounded __item--shadow">
+														<div class="__header">
+															<div class="__title h4">Free</div>
+
+															<img class="lazy" width="60" height="70" src="img/blank.gif" data-src="img/pricing_img/ico_1.png" alt="demo" />
+
+															<div class="__price"><sup>$</sup>0<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list">
+																<li>Increase traffic 100%</li>
+																<li>Web site Analysis</li>
+																<li>Content Optimization</li>
+																<li>10 Free Optimization</li>
+																<li class="disabled">Online 24/7 support</li>
+																<li class="disabled">Free Simple Website</li>
+																<li class="disabled">Monthly Gifts</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+
+												<!-- start item -->
+												<div class="col-12 col-sm-9 col-md-6 col-lg-5 col-xl-3 d-sm-flex">
+													<div class="__item __item--rounded __item--shadow">
+														<div class="__header">
+															<div class="__title h4">Optimal</div>
+
+															<img class="lazy" width="67" height="70" src="img/blank.gif" data-src="img/pricing_img/ico_2.png" alt="demo" />
+
+															<div class="__price"><sup>$</sup>9.9<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list">
+																<li>Increase traffic 100%</li>
+																<li>Web site Analysis</li>
+																<li>Content Optimization</li>
+																<li>10 Free Optimization</li>
+																<li>Online 24/7 support</li>
+																<li class="disabled">Free Simple Website</li>
+																<li class="disabled">Monthly Gifts</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+
+												<!-- start item -->
+												<div class="col-12 col-sm-9 col-md-6 col-lg-5 col-xl-3 d-sm-flex">
+													<div class="__item __item--rounded __item--shadow __item--active">
+														<div class="__header">
+															<span class="__label">Best choice</span>
+
+															<div class="__title h4">Standart</div>
+
+															<img class="lazy" width="52" height="70" src="img/blank.gif" data-src="img/pricing_img/ico_3.png" alt="demo" />
+
+															<div class="__price"><sup>$</sup>29.9<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list">
+																<li>Increase traffic 100%</li>
+																<li>Web site Analysis</li>
+																<li>Content Optimization</li>
+																<li>10 Free Optimization</li>
+																<li>Online 24/7 support</li>
+																<li>Free Simple Website</li>
+																<li class="disabled">Monthly Gifts</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium custom-btn--style-4" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+
+												<!-- start item -->
+												<div class="col-12 col-sm-9 col-md-6 col-lg-5 col-xl-3 d-sm-flex">
+													<div class="__item __item--rounded __item--shadow">
+														<div class="__header">
+															<div class="__title h4">Premium</div>
+
+															<img class="lazy" width="70" height="70" src="img/blank.gif" data-src="img/pricing_img/ico_4.png" alt="demo" />
+
+															<div class="__price"><sup>$</sup>199<sub>/mo</sub></div>
+														</div>
+
+														<div class="__body  pt-8 pb-9">
+															<ul class="__desc-list">
+																<li>Increase traffic 100%</li>
+																<li>Web site Analysis</li>
+																<li>Content Optimization</li>
+																<li>10 Free Optimization</li>
+																<li>Online 24/7 support</li>
+																<li>Free Simple Website</li>
+																<li>Monthly Gifts</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+											</div>
+										</div>
+									</div>
+									<!-- end pricing table -->
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section section--bg-img jarallax" data-speed="0.3" data-img-position="50% 60%" style="background-image: url(img/base_bg.jpg);">
+					<div class="container">
+						<div class="section-heading section-heading--white section-heading--center">
+							<h6 class="__subtitle">Pricing</h6>
+
+							<h2 class="__title">Pricing Plans <span>for Digital Marketing</span></h2>
+						</div>
+
+						<div class="spacer py-6"></div>
+
+						<div class="row">
+							<div class="col-12">
+
+								<div class="content-container">
+									<!-- start pricing table -->
+									<div class="pricing-table pricing-table--s1">
+										<div class="__inner">
+											<div class="row justify-content-sm-center">
+												<!-- start item -->
+												<div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-3 d-sm-flex">
+													<div class="__item __item--shadow">
+														<div class="__header">
+															<div class="__title h4">Free</div>
+
+															<img class="lazy" width="60" height="70" src="img/blank.gif" data-src="img/pricing_img/ico_1.png" alt="demo" />
+														</div>
+
+														<div class="__body  pt-8 pb-8">
+															<ul class="__desc-list">
+																<li>Increase traffic 100%</li>
+																<li>Web site Analysis</li>
+																<li class="disabled">Content Optimization</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<div class="__price"><sup>$</sup>0<sub>/mo</sub></div>
+
+															<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+
+												<!-- start item -->
+												<div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-3 d-sm-flex">
+													<div class="__item __item--shadow">
+														<div class="__header">
+															<div class="__title h4">Standart</div>
+
+															<img class="lazy" width="67" height="70" src="img/blank.gif" data-src="img/pricing_img/ico_2.png" alt="demo" />
+														</div>
+
+														<div class="__body  pt-8 pb-8">
+															<ul class="__desc-list">
+																<li>Increase traffic 100%</li>
+																<li>Web site Analysis</li>
+																<li>Content Optimization</li>
+																<li>10 Free Optimization</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<div class="__price"><sup>$</sup>9.9<sub>/mo</sub></div>
+
+															<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+
+												<!-- start item -->
+												<div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-3 d-sm-flex">
+													<div class="__item __item--shadow __item--active">
+														<div class="__header">
+															<div class="__title h4">Optimal</div>
+
+															<img class="lazy" width="52" height="70" src="img/blank.gif" data-src="img/pricing_img/ico_3.png" alt="demo" />
+														</div>
+
+														<div class="__body  pt-8 pb-8">
+															<ul class="__desc-list">
+																<li>Increase traffic 100%</li>
+																<li>Web site Analysis</li>
+																<li>Content Optimization</li>
+																<li>10 Free Optimization</li>
+																<li>Online 24/7 support</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<div class="__price"><sup>$</sup>29.9<sub>/mo</sub></div>
+
+															<a class="custom-btn custom-btn--medium custom-btn--style-4" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+
+												<!-- start item -->
+												<div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-3 d-sm-flex">
+													<div class="__item __item--shadow">
+														<div class="__header">
+															<div class="__title h4">Premium</div>
+
+															<img class="lazy" width="70" height="70" src="img/blank.gif" data-src="img/pricing_img/ico_4.png" alt="demo" />
+														</div>
+
+														<div class="__body  pt-8 pb-8">
+															<ul class="__desc-list">
+																<li>Increase traffic 100%</li>
+																<li>Web site Analysis</li>
+																<li>Content Optimization</li>
+																<li>10 Free Optimization</li>
+																<li>Online 24/7 support</li>
+																<li>Free Simple Website</li>
+																<li>Monthly Gifts</li>
+															</ul>
+														</div>
+
+														<div class="__footer">
+															<div class="__price"><sup>$</sup>199<sub>/mo</sub></div>
+
+															<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">&nbsp;&nbsp;Get Started&nbsp;&nbsp;</a>
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+											</div>
+										</div>
+									</div>
+									<!-- end pricing table -->
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="shape">
+						<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="450" viewBox="0 0 1680 450" preserveAspectRatio="none" style="min-height: 300px">
+							<path d="M0 3s561.937 57 842 55c286 0 484-18 839-58v450H-2z" style="mix-blend-mode:screen" fill="#fff" fill-rule="evenodd"/>
+						</svg>
+					</div>
+				</section>
+				<!-- end section -->
+			</main>
+			<!-- end main -->
+
+			<!-- start footer -->
+			<footer class="footer footer--s1 footer--color-light">
+				<div class="footer__line footer__line--first">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-md-4 col-lg-4 col-xl-3">
+								<div class="footer__item">
+									<a class="footer__logo site-logo" href="index.html">
+										<img class="img-fluid lazy" src="img/blank.gif" data-src="img/site_logo/logo_3.png" width="159" height="45" alt="demo" />
+									</a>
+								</div>
+
+								<div class="footer__item">
+									<span class="__copy">Copyrights 2019 © <a class="__dev" href="https://themeforest.net/user/artureanec" target="_blank">Artureanec Themes</a></span>
+								</div>
+							</div>
+
+							<div class="col-12 col-md-5 col-lg-3 offset-xl-1">
+								<div class="footer__item">
+									<address class="footer__address footer__address--s1">
+										113 Fulton Street, Suite 721
+										New&nbsp;York, NY 10010 <br>
+										<a href="mailto:youremail@yourdomain.com">youremail@yourdomain.com</a> <br>
+										<a href="#">+88 (0) 101 0000 000</a>
+									</address>
+								</div>
+							</div>
+
+							<div class="col-12 col-md-3 col-lg-2">
+								<div class="footer__item">
+									<nav id="footer__navigation" class="footer__navigation">
+										<ul>
+											<!-- li class="active" -->
+											<li><a href="#">Documents</a></li>
+											<li><a href="#">Aditional Info</a></li>
+											<li><a href="#">Application</a></li>
+											<li><a href="#">Useful Link</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+
+							<div class="col-12 col-lg-3">
+								<div class="footer__item">
+									<!-- start social buttons -->
+									<div class="s-btns s-btns--md s-btns--colored s-btns--rounded">
+										<ul class="d-flex flex-row flex-wrap align-items-center">
+											<li><a class="f" href="#"><i class="fontello-facebook"></i></a></li>
+											<li><a class="t" href="#"><i class="fontello-twitter"></i></a></li>
+											<li><a class="y" href="#"><i class="fontello-youtube-play"></i></a></li>
+											<li><a class="i" href="#"><i class="fontello-instagram"></i></a></li>
+										</ul>
+									</div>
+									<!-- end social buttons -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__waves-container">
+					<svg class="footer__wave js-wave" data-wave='{"height": 40, "bones": 6, "amplitude": 70, "color": "rgba(78, 111, 136, 0.14)", "speed": 0.3}' width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path d=""/></svg>
+
+					<svg class="footer__wave js-wave" data-wave='{"height": 60, "bones": 5, "amplitude": 90, "color": "rgba(243, 248, 249, 0.02)", "speed": 0.35}' width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path d=""/></svg>
+				</div>
+			</footer>
+			<!-- end footer -->
+		</div>
+
+		<div id="btn-to-top-wrap">
+			<a id="btn-to-top" class="circled" href="javascript:void(0);" data-visible-offset="800"></a>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-2.2.4.min.js"><\/script>')</script>
+
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="js/main.min.js"></script>
+		
+	</body>
+</html>

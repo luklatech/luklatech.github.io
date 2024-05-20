@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+	<head>
+		<title>TechLand</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui" />
+
+		<meta name="theme-color" content="#056EB9" />
+		<meta name="msapplication-navbutton-color" content="#056EB9" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#056EB9" />
+
+		<!-- Favicons
+		================================================== -->
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+		<!-- Critical styles
+		================================================== -->
+		<link rel="stylesheet" href="css/critical.min.css" type="text/css">
+
+		<!-- Load google font
+		================================================== -->
+		<script type="text/javascript">
+			WebFontConfig = {
+				google: { families: [ 'Nunito+Sans:400,400i,700,700i,800,800i,900,900i', 'Quicksand:300,400,700'] }
+			};
+			(function() {
+				var wf = document.createElement('script');
+				wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+				wf.type = 'text/javascript';
+				wf.async = 'true';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(wf, s);
+			})();
+		</script>
+
+		<!-- Load other scripts
+		================================================== -->
+		<script type="text/javascript">
+			var _html = document.documentElement,
+				isTouch = (('ontouchstart' in _html) || (navigator.msMaxTouchPoints > 0) || (navigator.maxTouchPoints));
+
+			_html.className = _html.className.replace("no-js","js");
+			_html.classList.add( isTouch ? "touch" : "no-touch");
+		</script>
+		<script type="text/javascript" src="js/device.min.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<style type="text/css">
+				#app {
+				  background-image: url(../demo/bg.jpg);
+				  background-position: top 20vh center;
+				  background-repeat: no-repeat
+				}
+				.c-hero .start-screen__content__item
+				{
+				  min-height: 80vh
+				}
+				.c-hero .__site-name {
+				  line-height: 1.2;
+				  font-size: 2.5rem;
+				  font-weight: 800;
+				  font-style: italic;
+				  color: #333;
+				  letter-spacing: -.05em
+				}
+				#demos .shape-img img {
+				  position: absolute;
+				  top: -10vw;
+				  left: 0;
+				  right: 0;
+				  max-width: 100%;
+				  margin: auto;
+				  pointer-events: none;
+				  z-index: -1
+				}
+				.c-demos .__inner {
+				  margin-bottom: -70px
+				}
+				.c-demos .__item {
+				  position: relative;
+				  width: 100%;
+				  max-width: 530px;
+				  margin-bottom: 70px
+				}
+				.c-demos .__item:hover .custom-btn {
+				  opacity: 1
+				}
+				.desktop .c-demos .__item:hover .__image {
+				  -webkit-transform: translateY(-10px);
+				      -ms-transform: translateY(-10px);
+				          transform: translateY(-10px)
+				}
+				.c-demos .__image {
+				  position: relative;
+				  margin: auto auto 40px;
+				  width: 100%;
+				  height: 0;
+				  overflow: hidden;
+				  padding-top: 103.77358%;
+				  -webkit-box-shadow: 0 0 57px rgba(0,0,0,.21);
+				          box-shadow: 0 0 57px rgba(0,0,0,.21);
+				  -webkit-transition: -webkit-transform .3s;
+				  transition: -webkit-transform .3s;
+				  transition: transform .3s;
+				  transition: transform .3s, -webkit-transform .3s;
+				  -o-transition: transform .3s;
+				  transition: transform .3s,-webkit-transform .3s
+				}
+				.c-demos .__image img {
+				  position: absolute;
+				  top: 0;
+				  left: 0;
+				  width: 100%;
+				  height: 100%
+				}
+				.c-demos .custom-btn {
+				  position: absolute;
+				  top: 0;
+				  right: 0;
+				  bottom: 0;
+				  left: 0;
+				  margin: auto;
+				  width: 160px;
+				  height: 55px;
+				  opacity: 0
+				}
+				.c-demos .custom-btn:not(:hover):not(:focus) {
+				  background-color: #fff
+				}
+				.c-demos .__title {
+				  font-weight: 700;
+				  text-align: center;
+				  text-transform: none
+				}
+				.c-demos .__title a {
+				  font-size: 120%
+				}
+				.c-ui .__inner {
+				  margin-bottom: -30px
+				}
+				.c-ui .__item {
+				  margin-bottom: 30px
+				}
+				.c-ui .__num {
+				  line-height: 1;
+				  font-size: 5rem;
+				  font-weight: 700
+				}
+				.c-technology .__inner {
+				  margin-bottom: -30px
+				}
+				.c-technology .__item {
+				  position: relative;
+				  margin-bottom: 30px;
+				  background-color: #fff;
+				  -webkit-box-shadow: 0 0 27px 0 rgba(10,10,10,.05);
+				          box-shadow: 0 0 27px 0 rgba(10,10,10,.05);
+				  height: 160px
+				}
+				.c-technology .__item img {
+				  position: absolute;
+				  top: 0;
+				  right: 0;
+				  bottom: 0;
+				  left: 0;
+				  max-width: 90%;
+				  max-height: 90%;
+				  margin: auto
+				}
+				.c-text {
+				  margin-bottom: -5%;
+				  font-size: 1.4rem;
+				  color: #8988c6
+				}
+
+				@media (min-width:576px)
+				{
+					.c-hero .__title {
+					  font-size: 5rem
+					}
+				}
+
+				@media (min-width:768px)
+				{
+					.c-hero .__title {
+					  font-size: 6rem
+					}
+				}
+			</style>
+
+			<!-- start header -->
+			<header id="top-bar" class="top-bar top-bar--dark" data-nav-anchor="true">
+				<div class="top-bar__inner">
+					<div class="container">
+						<div class="row align-items-center no-gutters">
+
+							<span class="top-bar__logo site-logo">
+								<img class="img-fluid" src="img/site_logo/logo_2.png" width="159" height="45" alt="demo" />
+							</span>
+
+							<a id="top-bar__navigation-toggler" class="top-bar__navigation-toggler" href="javascript:void(0);">
+								<span></span>
+							</a>
+
+							<div class="top-bar__collapse">
+								<nav id="top-bar__navigation" class="top-bar__navigation" role="navigation">
+									<ul>
+										<li>
+											<a class="nav-link" href="#demos">Demos</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="#features">Features</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="#ui-kit">UI Kit</a>
+										</li>
+									</ul>
+								</nav>
+
+								<div id="top-bar__action" class="top-bar__action">
+									<div class="top-bar__auth-btns">
+										<a class="custom-btn custom-btn--medium custom-btn--style-3" href="#">Buy for 19$</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- end header -->
+
+			<!-- start hero -->
+			<div id="start-screen" class="c-hero start-screen">
+				<div class="start-screen__content__item align-items-center">
+					<div class="container-fluid text-center">
+						<div class="__site-name d-none d-sm-block">TechLand</div>
+
+						<h1 class="__title">SEO | Marketing, App, VPN, SAAS | Softaware<br><span>Landing pages Pack + UI Kit</span></h1>
+
+						<p>
+							<a class="custom-btn custom-btn--big custom-btn--style-1" href="#demos">See Demo</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- end hero -->
+
+			<!-- start main -->
+			<main role="main">
+				<!-- Common styles
+				================================================== -->
+				<link rel="stylesheet" href="css/style.min.css" type="text/css">
+
+				<!-- Load lazyLoad scripts
+				================================================== -->
+				<script>
+					(function(w, d){
+						var m = d.getElementsByTagName('main')[0],
+							s = d.createElement("script"),
+							v = !("IntersectionObserver" in w) ? "8.17.0" : "11.0.6",
+							o = {
+								elements_selector: ".lazy",
+								threshold: 500,
+								callback_enter: function (element) {
+
+								},
+								callback_load: function (element) {
+
+								},
+								callback_set: function (element) {
+
+									oTimeout = setTimeout(function ()
+									{
+										clearTimeout(oTimeout);
+
+										AOS.refresh();
+									}, 1000);
+								},
+								callback_error: function(element) {
+									element.src = "https://placeholdit.imgix.net/~text?txtsize=21&txt=Image%20not%20load&w=200&h=200";
+								}
+							};
+						s.type = 'text/javascript';
+						s.async = false; // This includes the script as async. See the "recipes" section for more information about async loading of LazyLoad.
+						s.src = "https://cdn.jsdelivr.net/npm/vanilla-lazyload@" + v + "/dist/lazyload.min.js";
+						m.appendChild(s);
+						// m.insertBefore(s, m.firstChild);
+						w.lazyLoadOptions = o;
+					}(window, document));
+				</script>
+
+				<!-- start section -->
+				<section id="demos" class="section section--no-pb">
+					<div class="shape-img">
+						<img src="../demo/shape.png" alt="">
+					</div>
+
+					<div class="container">
+						<div class="c-demos">
+							<div class="__inner">
+								<div class="row justify-content-between">
+									<div class="col-12 col-md-6 col-xl">
+										<div class="__item">
+											<figure class="__image">
+
+												<img class="img-fluid lazy" width="530" height="550" data-src="../demo/d1.jpg" alt="">
+
+												<a class="custom-btn custom-btn--medium custom-btn--style-1" href="index.html" target="_blank">See demo</a>
+											</figure>
+
+											<h4 class="__title"><a href="index.html" target="_blank">SEO | Digital Marketing<br><span>Landing Page</a></h4>
+										</div>
+									</div>
+
+									<div class="d-none d-xl-block" style="width: 80px"></div>
+
+									<div class="col-12 col-md-6 col-xl">
+										<div class="__item">
+											<figure class="__image">
+
+												<img class="img-fluid lazy" width="530" height="550" data-src="../demo/d2.jpg" alt="">
+
+												<a class="custom-btn custom-btn--medium custom-btn--style-1" href="index_2.html" target="_blank">See demo</a>
+											</figure>
+
+											<h4 class="__title"><a href="index_2.html" target="_blank">Mobile App<br><span>Landing Page</span></a></h4>
+										</div>
+									</div>
+								</div>
+
+								<div class="row justify-content-between">
+									<div class="col-12 col-md-6 col-xl">
+										<div class="__item" data-aos="fade-up" data-aos-offset="100" data-aos-duration="400" data-aos-delay="100">
+											<figure class="__image">
+
+												<img class="img-fluid lazy" width="530" height="550" data-src="../demo/d3.jpg" alt="">
+
+												<a class="custom-btn custom-btn--medium custom-btn--style-1" href="index_3.html" target="_blank">See demo</a>
+											</figure>
+
+											<h4 class="__title"><a href="index_3.html" target="_blank">SAAS | Software<br><span>Landing Page</span></a></h4>
+										</div>
+									</div>
+
+									<div class="d-none d-xl-block" style="width: 80px"></div>
+
+									<div class="col-12 col-md-6 col-xl">
+										<div class="__item" data-aos="fade-up" data-aos-offset="100" data-aos-duration="400" data-aos-delay="300">
+											<figure class="__image">
+
+												<img class="img-fluid lazy" width="530" height="550" data-src="../demo/d4.jpg" alt="">
+
+												<a class="custom-btn custom-btn--medium custom-btn--style-1" href="index_4.html" target="_blank">See demo</a>
+											</figure>
+
+											<h4 class="__title"><a href="index_4.html" target="_blank">VPN | Hosting<br><span>Landing Page</span></a></h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section id="features" class="section">
+					<div class="container">
+						<div class="section-heading section-heading--center" data-aos="fade">
+							<h6 class="__subtitle">Features</h6>
+
+							<h2 class="__title">What We Provide<br><span>in TechLand Landing Pages Pack</span></h2>
+						</div>
+
+						<div class="spacer py-6"></div>
+
+						<div class="row">
+							<div class="col-12">
+
+								<!-- start counter -->
+								<div class="counter counter--s2">
+									<div class="__inner">
+										<div class="row">
+											<!-- start item -->
+											<div class="col-12 col-sm-6 col-lg-3">
+												<div class="__item  text-center" data-aos="zoom-out" data-aos-duration="200" data-aos-delay="150">
+													<i class="__ico mb-2">
+														<svg fill="#ff3267" xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 937.5 937.5"><path d="M93.75 62.5v156.25H125V62.5c0-17.262 13.988-31.25 31.25-31.25h625c17.262 0 31.25 13.988 31.25 31.25h31.25c0-34.516-27.984-62.5-62.5-62.5h-625c-34.516 0-62.5 27.984-62.5 62.5zm0 0M62.5 937.5h718.75c34.516 0 62.5-27.984 62.5-62.5v-62.5H812.5V875c0 17.262-13.988 31.25-31.25 31.25S750 892.262 750 875v-46.875c0-8.633-6.992-15.625-15.625-15.625H125V500H93.75v312.5H15.625C6.992 812.5 0 819.492 0 828.125V875c0 34.516 27.984 62.5 62.5 62.5zm-31.25-93.75h687.5V875a62.044 62.044 0 0 0 8.395 31.25H62.5c-17.262 0-31.25-13.988-31.25-31.25zm0 0M15.625 468.75h312.5c8.633 0 15.625-6.992 15.625-15.625v-187.5c0-8.633-6.992-15.625-15.625-15.625h-312.5C6.992 250 0 256.992 0 265.625v187.5c0 8.633 6.992 15.625 15.625 15.625zm15.625-187.5H312.5V437.5H31.25zm0 0"/><path d="M98.328 317.078l-31.25 31.25c-6.098 6.106-6.098 15.988 0 22.094l31.25 31.25 22.094-22.094-20.203-20.203 20.203-20.203zm0 0M245.422 317.078l-22.094 22.094 20.203 20.203-20.203 20.203 22.094 22.094 31.25-31.25c6.098-6.106 6.098-15.988 0-22.094zm0 0M141.414 401.309l31.266-93.762 29.656 9.89-31.281 93.754zm0 0M921.875 93.75h-531.25c-8.633 0-15.625 6.992-15.625 15.625v312.5c0 8.633 6.992 15.625 15.625 15.625h531.25c8.633 0 15.625-6.992 15.625-15.625v-312.5c0-8.633-6.992-15.625-15.625-15.625zm-15.625 312.5h-500v-38.031l140.313-84.188L683.355 372.5a15.607 15.607 0 0 0 15.625.75l113.122-58.594 94.148 53.781zm0-73.797l-85.938-49.14a15.62 15.62 0 0 0-14.94-.313l-112.606 58.332L555.422 252.5a15.631 15.631 0 0 0-16.535-.266L406.25 331.781V125h500zm0 0"/><path d="M742.188 265.625c30.203 0 54.687-24.484 54.687-54.688 0-30.203-24.484-54.687-54.688-54.687-30.203 0-54.687 24.484-54.687 54.688 0 30.203 24.484 54.687 54.688 54.687zm0-78.125c12.945 0 23.437 10.492 23.437 23.438 0 12.945-10.492 23.437-23.438 23.437-12.945 0-23.437-10.492-23.437-23.438 0-12.945 10.492-23.437 23.438-23.437zm0 0M156.25 515.625v187.5c0 8.633 6.992 15.625 15.625 15.625H562.5c8.633 0 15.625-6.992 15.625-15.625v-187.5c0-8.633-6.992-15.625-15.625-15.625H171.875c-8.633 0-15.625 6.992-15.625 15.625zm31.25 15.625h359.375V687.5H187.5zm0 0"/><path d="M218.75 562.5h62.5v31.25h-62.5zm0 0M312.5 562.5h140.625v31.25H312.5zm0 0M484.375 562.5h31.25v31.25h-31.25zm0 0M218.75 625h187.5v31.25h-187.5zm0 0M437.5 625h78.125v31.25H437.5zm0 0M156.25 62.5h31.25v31.25h-31.25zm0 0M218.75 62.5H250v31.25h-31.25zm0 0M281.25 62.5h31.25v31.25h-31.25zm0 0M156.25 125h187.5v31.25h-187.5zm0 0M921.875 562.5H625c-8.633 0-15.625 6.992-15.625 15.625v187.5c0 8.633 6.992 15.625 15.625 15.625h296.875c8.633 0 15.625-6.992 15.625-15.625v-187.5c0-8.633-6.992-15.625-15.625-15.625zM906.25 750H640.625V593.75H906.25zm0 0"/><path d="M671.875 625h31.25v31.25h-31.25zm0 0M671.875 687.5h31.25v31.25h-31.25zm0 0M734.375 625H875v31.25H734.375zm0 0M734.375 687.5H875v31.25H734.375zm0 0M812.5 468.75h31.25v62.5H812.5zm0 0"/></svg>
+													</i>
+
+													<div class="__content">
+														<div class="__count js-count" data-from="0" data-to="100" data-after-text="+"></div>
+														<div class="__title">UI Kit Elemetns</div>
+													</div>
+												</div>
+											</div>
+											<!-- end item -->
+
+											<!-- start item -->
+											<div class="col-12 col-sm-6 col-lg-3">
+												<div class="__item  text-center" data-aos="zoom-out" data-aos-duration="200" data-aos-delay="300">
+													<i class="__ico mb-2">
+														<svg fill="#51c6e5" xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 -31 937.5 937"><path d="M62.5 750.25h31.25V719H62.5c-17.262 0-31.25-13.988-31.25-31.25v-625c0-17.262 13.988-31.25 31.25-31.25H750c17.262 0 31.25 13.988 31.25 31.25V94h31.25V62.75c0-34.516-27.984-62.5-62.5-62.5H62.5C27.984.25 0 28.234 0 62.75v625c0 34.516 27.984 62.5 62.5 62.5zm0 0"/><path d="M62.5 62.75h31.25V94H62.5zm0 0M125 62.75h31.25V94H125zm0 0M187.5 62.75h31.25V94H187.5zm0 0M125 812.75c0 34.516 27.984 62.5 62.5 62.5H875c34.516 0 62.5-27.984 62.5-62.5v-625c0-34.516-27.984-62.5-62.5-62.5H187.5c-34.516 0-62.5 27.984-62.5 62.5zm31.25-625c0-17.262 13.988-31.25 31.25-31.25H875c17.262 0 31.25 13.988 31.25 31.25v625c0 17.262-13.988 31.25-31.25 31.25H187.5c-17.262 0-31.25-13.988-31.25-31.25zm0 0"/><path d="M187.5 187.75h31.25V219H187.5zm0 0M250 187.75h31.25V219H250zm0 0M312.5 187.75h31.25V219H312.5zm0 0M187.5 250.25H875v31.25H187.5zm0 0M187.5 328.375h125v31.25h-125zm0 0M187.5 390.875h93.75v31.25H187.5zm0 0M531.25 453.375c-60.41 0-109.375 48.965-109.375 109.375S470.84 672.125 531.25 672.125 640.625 623.16 640.625 562.75c-.07-60.375-49-109.305-109.375-109.375zm0 187.5c-43.145 0-78.125-34.98-78.125-78.125s34.98-78.125 78.125-78.125 78.125 34.98 78.125 78.125c-.055 43.125-35 78.07-78.125 78.125zm0 0"/><path d="M781.25 515.875c0-8.633-6.992-15.625-15.625-15.625h-41.297a198.766 198.766 0 0 0-12.36-29.844l29.204-29.183c6.094-6.106 6.094-15.993 0-22.098l-66.297-66.297c-6.105-6.094-15.992-6.094-22.098 0l-29.183 29.188a202.214 202.214 0 0 0-29.844-12.344v-41.297c0-8.633-6.992-15.625-15.625-15.625h-93.75c-8.633 0-15.625 6.992-15.625 15.625v41.297a202.214 202.214 0 0 0-29.844 12.344l-29.183-29.188c-6.106-6.094-15.993-6.094-22.098 0l-66.297 66.297c-6.094 6.105-6.094 15.992 0 22.098l29.188 29.183a203.28 203.28 0 0 0-3.75 7.719 202.102 202.102 0 0 0-8.594 22.125h-41.297c-8.633 0-15.625 6.992-15.625 15.625v93.75c0 8.633 6.992 15.625 15.625 15.625h41.297a198.766 198.766 0 0 0 12.36 29.844l-29.204 29.183c-6.094 6.106-6.094 15.993 0 22.098l66.297 66.297c6.105 6.094 15.992 6.094 22.098 0l29.183-29.188a202.214 202.214 0 0 0 29.844 12.344v41.297c0 8.633 6.992 15.625 15.625 15.625h93.75c8.633 0 15.625-6.992 15.625-15.625v-41.297a202.214 202.214 0 0 0 29.844-12.344l29.183 29.188c6.106 6.094 15.993 6.094 22.098 0l66.297-66.297c6.094-6.105 6.094-15.992 0-22.098l-29.203-29.183a198.766 198.766 0 0 0 12.36-29.844h41.296c8.633 0 15.625-6.992 15.625-15.625zM750 594h-37.406a15.625 15.625 0 0 0-15.125 11.719 170.84 170.84 0 0 1-18.282 44.187c-3.62 6.133-2.625 13.946 2.407 18.985l26.418 26.433-44.188 44.207-26.433-26.437a15.627 15.627 0 0 0-18.993-2.407 170.654 170.654 0 0 1-44.18 18.282 15.625 15.625 0 0 0-11.718 15.125V781.5H500v-37.406a15.625 15.625 0 0 0-11.719-15.125 170.654 170.654 0 0 1-44.18-18.282 15.627 15.627 0 0 0-18.992 2.407l-26.433 26.437-44.188-44.207 26.418-26.433c5.031-5.04 6.028-12.852 2.406-18.985a170.84 170.84 0 0 1-18.28-44.187A15.625 15.625 0 0 0 349.905 594H312.5v-62.5h37.406a15.625 15.625 0 0 0 15.125-11.719 169.672 169.672 0 0 1 10.16-28.636 172.552 172.552 0 0 1 8.122-15.625 15.635 15.635 0 0 0-2.407-18.973l-26.418-26.434 44.188-44.207 26.433 26.446a15.619 15.619 0 0 0 18.993 2.394 170.926 170.926 0 0 1 44.18-18.281A15.623 15.623 0 0 0 500 381.348V344h62.5v37.406a15.625 15.625 0 0 0 11.719 15.125 170.654 170.654 0 0 1 44.18 18.281 15.627 15.627 0 0 0 18.992-2.406l26.433-26.437 44.188 44.207-26.418 26.433c-5.032 5.04-6.028 12.852-2.407 18.985a170.84 170.84 0 0 1 18.282 44.187 15.625 15.625 0 0 0 15.125 11.719H750zm0 0M781.25 781.5H875v31.25h-93.75zm0 0"/></svg>
+													</i>
+
+													<div class="__content">
+														<div class="__count js-count" data-from="0" data-to="1000" data-after-text="+"></div>
+														<div class="__title">Creating Unique Pages</div>
+													</div>
+												</div>
+											</div>
+											<!-- end item -->
+
+											<!-- start item -->
+											<div class="col-12 col-sm-6 col-lg-3">
+												<div class="__item  text-center" data-aos="zoom-out" data-aos-duration="200" data-aos-delay="450">
+													<i class="__ico mb-2">
+														<svg fill="#43bc7b" xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 937.5 937.5"><path d="M859.375 656.25h-156.25c-8.633 0-15.625 6.992-15.625 15.625v187.5c0 8.633 6.992 15.625 15.625 15.625h156.25c8.633 0 15.625-6.992 15.625-15.625v-187.5c0-8.633-6.992-15.625-15.625-15.625zm-15.625 187.5h-125V687.5h125zm0 0M649.453 420.438c6.102 6.101 15.985 6.101 22.09 0l110.488-110.485c6.102-6.105 6.102-16 0-22.101L649.438 155.277c-6.196-5.867-15.899-5.867-22.094 0L516.875 265.762c-6.102 6.105-6.102 16 0 22.09zm-11.062-232.016l110.507 110.48-88.398 88.399L550 276.805zm0 0M505.828 579.688a15.63 15.63 0 0 0 11.047-4.579l110.469-110.504c6.101-6.097 6.101-15.992 0-22.097l-132.578-132.57c-6.204-5.86-15.899-5.86-22.102 0L362.207 420.421c-6.105 6.098-6.105 15.992 0 22.086l132.574 132.601a15.623 15.623 0 0 0 11.047 4.578zM483.715 343.09l110.484 110.484-88.37 88.414-110.517-110.5zm0 0M78.125 250h187.5c8.633 0 15.625-6.992 15.625-15.625V78.125c0-8.633-6.992-15.625-15.625-15.625h-187.5c-8.633 0-15.625 6.992-15.625 15.625v156.25c0 8.633 6.992 15.625 15.625 15.625zM93.75 93.75H250v125H93.75zm0 0M78.125 468.75h187.5c8.633 0 15.625-6.992 15.625-15.625v-156.25c0-8.633-6.992-15.625-15.625-15.625h-187.5c-8.633 0-15.625 6.992-15.625 15.625v156.25c0 8.633 6.992 15.625 15.625 15.625zM93.75 312.5H250v125H93.75zm0 0M281.25 671.875v-156.25c0-8.633-6.992-15.625-15.625-15.625h-187.5c-8.633 0-15.625 6.992-15.625 15.625v156.25c0 8.633 6.992 15.625 15.625 15.625h187.5c8.633 0 15.625-6.992 15.625-15.625zM250 656.25H93.75v-125H250zm0 0M171.875 718.75c-34.516 0-62.5 27.984-62.5 62.5s27.984 62.5 62.5 62.5 62.5-27.984 62.5-62.5-27.984-62.5-62.5-62.5zm0 93.75c-17.262 0-31.25-13.988-31.25-31.25S154.613 750 171.875 750s31.25 13.988 31.25 31.25-13.988 31.25-31.25 31.25zm0 0"/><path d="M875 593.75H586.719L837.28 343.09c24.399-24.399 24.399-63.969 0-88.38L682.594 100.032a62.14 62.14 0 0 0-44.203-18.297A62.11 62.11 0 0 0 594.199 100L343.75 350.582V62.5c0-34.516-27.984-62.5-62.5-62.5H62.5C27.984 0 0 27.984 0 62.5v703.125C.117 860.504 76.996 937.383 171.875 937.5H875c34.516 0 62.5-27.984 62.5-62.5V656.25c0-34.516-27.984-62.5-62.5-62.5zM343.75 512.5l95.777 95.781-88.386 88.375-7.391-7.394zm-1.406 274.027c.187-1.465.426-2.925.578-4.398.496-5.457.828-10.942.828-16.496v-33.387a15.318 15.318 0 0 0 7.39 2.129 15.63 15.63 0 0 0 11.048-4.578l110.476-110.48c6.106-6.106 6.106-15.997 0-22.094L343.75 468.3v-73.52l272.547-272.64c12.21-12.211 31.992-12.211 44.203 0l154.688 154.687c12.199 12.203 12.199 31.985 0 44.188L370.483 765.863l-29.234 29.25c.488-2.847.75-5.738 1.094-8.597zM500 687.5h125v156.25H500zm-93.75 86.79v69.46h-69.434zm-206.11 129.1c-3.906.813-7.906 1.356-11.917 1.829-.715.078-1.395.242-2.094.308-4.691.473-9.375.723-14.254.723-77.633-.086-140.54-62.992-140.625-140.625V62.5c0-17.262 13.988-31.25 31.25-31.25h218.75c17.262 0 31.25 13.988 31.25 31.25v703.125c0 4.813-.25 9.563-.723 14.254 0 .71-.23 1.402-.308 2.113-.473 4.024-1.031 8.008-1.828 11.899l-.11.437c-11.504 54.649-54.172 97.367-108.808 108.922zM906.25 875c0 17.262-13.988 31.25-31.25 31.25H270.762a172.138 172.138 0 0 0 22.64-19.098L305.566 875h116.309c8.633 0 15.625-6.992 15.625-15.625v-116.36l31.25-31.25v147.61c0 8.633 6.992 15.625 15.625 15.625h156.25c8.633 0 15.625-6.992 15.625-15.625v-187.5c0-8.633-6.992-15.625-15.625-15.625H524.227l31.25-31.25H875c17.262 0 31.25 13.988 31.25 31.25zm0 0"/></svg>
+													</i>
+
+													<div class="__content">
+														<div class="__count js-count" data-from="0" data-to="5" data-after-text="+"></div>
+														<div class="__title">Color Schemes</div>
+													</div>
+												</div>
+											</div>
+											<!-- end item -->
+
+											<!-- start item -->
+											<div class="col-12 col-sm-6 col-lg-3">
+												<div class="__item  text-center" data-aos="zoom-out" data-aos-duration="200" data-aos-delay="600">
+													<i class="__ico mb-2">
+														<svg fill="#1c5fac" xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="-125 0 937 937.5"><path d="M156.5 0c-43.125.055-78.07 35-78.125 78.125V125h-62.5C7.242 125 .25 131.992.25 140.625v781.25c0 8.633 6.992 15.625 15.625 15.625h656.25c8.633 0 15.625-6.992 15.625-15.625v-625c0-.332-.176-.625-.191-.953a15.097 15.097 0 0 0-.809-4.055c-.172-.508-.293-.972-.52-1.46a15.265 15.265 0 0 0-3.12-4.579l-156.25-156.25a15.208 15.208 0 0 0-4.563-3.047c-.504-.238-.985-.36-1.563-.55a15.604 15.604 0 0 0-3.968-.778c-.344 0-.653-.203-1.012-.203H234.625V78.125C234.57 35 199.625.055 156.5 0zm-46.875 78.125c0-25.883 20.992-46.875 46.875-46.875s46.875 20.992 46.875 46.875V125h-93.75zM531.5 178.344L634.406 281.25H531.5zm-31.25-22.094v140.625c0 8.633 6.992 15.625 15.625 15.625H656.5v593.75h-625v-750h171.875v109.375c0 25.883-20.992 46.875-46.875 46.875s-46.875-20.992-46.875-46.875v-62.5h-31.25v62.5c0 43.145 34.98 78.125 78.125 78.125s78.125-34.98 78.125-78.125V156.25zm0 0"/><path d="M78.375 390.625V843.75c0 8.633 6.992 15.625 15.625 15.625h500c8.633 0 15.625-6.992 15.625-15.625V390.625c0-8.633-6.992-15.625-15.625-15.625H94c-8.633 0-15.625 6.992-15.625 15.625zm31.25 15.625h468.75v290.406l-90.516-90.515c-6.105-6.098-15.988-6.098-22.093 0l-74.22 74.218-114.062-128.25a15.666 15.666 0 0 0-11.16-5.234 15.338 15.338 0 0 0-11.496 4.578L109.625 696.656zm0 334.594l155.578-155.578 114.063 128.25a15.623 15.623 0 0 0 11.218 5.234 14.9 14.9 0 0 0 11.5-4.578l74.829-74.89 101.562 101.562v87.281h-468.75zm0 0"/><path d="M390.875 578.125c34.516 0 62.5-27.984 62.5-62.5s-27.984-62.5-62.5-62.5-62.5 27.984-62.5 62.5 27.984 62.5 62.5 62.5zm0-93.75c17.262 0 31.25 13.988 31.25 31.25s-13.988 31.25-31.25 31.25-31.25-13.988-31.25-31.25 13.988-31.25 31.25-31.25zm0 0"/></svg>
+													</i>
+
+													<div class="__content">
+														<div class="__count js-count" data-from="0" data-to="500" data-after-text="+"></div>
+														<div class="__title">Graphic Elements Included</div>
+													</div>
+												</div>
+											</div>
+											<!-- end item -->
+										</div>
+									</div>
+								</div>
+								<!-- end counter -->
+
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section id="ui-kit" class="section section--light-blue-bg">
+					<div class="container">
+						<div class="row align-items-lg-end">
+							<div class="col-12 col-lg-8">
+
+								<div class="section-heading" data-aos="fade">
+									<h6 class="__subtitle">UI Kit</h6>
+
+									<h2 class="__title">Powerfull UI Kit <br><span>for Creation Different Landing Pages</span></h2>
+								</div>
+
+								<h5>Created UI Kit Blocks</h5>
+
+								<div class="c-ui">
+									<div class="__inner">
+										<div class="row">
+											<div class="col-auto">
+												<div class="__item">
+													<div class="__num" style="color: #ff3267">13</div>
+
+													<p class="h5">Headers</p>
+												</div>
+											</div>
+
+											<div class="col-auto">
+												<div class="__item">
+													<div class="__num" style="color: #43bc7b">6</div>
+
+													<p class="h5">Footers</p>
+												</div>
+											</div>
+
+											<div class="col-auto">
+												<div class="__item">
+													<div class="__num" style="color: #51c6e5">5</div>
+
+													<p class="h5">About Us</p>
+												</div>
+											</div>
+
+											<div class="col-auto">
+												<div class="__item">
+													<div class="__num" style="color: #1c5fac">6</div>
+
+													<p class="h5">Services</p>
+												</div>
+											</div>
+
+											<div class="col-auto">
+												<div class="__item">
+													<div class="__num" style="color: #fb6a30">5</div>
+
+													<p class="h5">Projects</p>
+												</div>
+											</div>
+
+											<div class="col-auto">
+												<div class="__item">
+													<div class="__num" style="color: #f7624a">50+</div>
+
+													<p class="h5">Others</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="spacer py-4 d-lg-none"></div>
+
+							<div class="col-12 col-lg-4">
+								<div data-aos="fade-left">
+									<img class="img-fluid lazy" width="340" height="" src="img/blank.gif" data-src="img/img_9.png" data-srcset="img/img_9.png 1x, img/img_9@2x.png 2x" alt="demo" />
+								</div>
+							</div>
+						</div>
+
+						<div class="spacer py-8"></div>
+					</div>
+
+					<img class="lazy w-100" data-src="../demo/ui.png" alt="">
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section section--no-pt section--light-blue-bg">
+					<div class="container">
+						<div class="section-heading section-heading--center" data-aos="fade">
+							<h6 class="__subtitle">Waht we use</h6>
+
+							<h2 class="__title">Used <span>Technology</span></h2>
+						</div>
+
+						<div class="spacer py-6"></div>
+
+						<div class="row">
+							<div class="col-12">
+
+								<div class="c-technology">
+									<div class="__inner">
+										<div class="row">
+											<div class="col-12 col-sm-6 col-lg-3">
+												<div class="__item" data-aos="fade" data-aos-delay="0">
+													<img data-src="../demo/t1.jpg" alt="" class="lazy">
+												</div>
+											</div>
+
+											<div class="col-12 col-sm-6 col-lg-3">
+												<div class="__item" data-aos="fade" data-aos-delay="150">
+													<img data-src="../demo/t2.jpg" alt="" class="lazy">
+												</div>
+											</div>
+
+											<div class="col-12 col-sm-6 col-lg-3">
+												<div class="__item" data-aos="fade" data-aos-delay="300">
+													<img data-src="../demo/t3.jpg" alt="" class="lazy">
+												</div>
+											</div>
+
+											<div class="col-12 col-sm-6 col-lg-3">
+												<div class="__item" data-aos="fade" data-aos-delay="450">
+													<img data-src="../demo/t4.jpg" alt="" class="lazy">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section section--bg-img jarallax" data-speed="0.3" data-img-position="50% 50%" style="background-image: url(img/base_bg.jpg);">
+					<div class="container text-center">
+						<h2 class="__title text-white">You can buy <span>TechLand HTML Template for 19$</span></h2>
+
+						<div class="spacer py-4"></div>
+
+						<a class="custom-btn custom-btn--medium custom-btn--style-4 text-white" href="#" style="background-color: #30e3ca;border-color: #30e3ca;">Buy TechLand</a>
+
+						<div class="c-text mt-6 mt-md-12 pt-md-8">
+							<p>Copyright © 2019. All rights are reserved</p>
+						</div>
+					</div>
+				</section>
+				<!-- end section -->
+			</main>
+			<!-- end main -->
+		</div>
+
+		<div id="btn-to-top-wrap">
+			<a id="btn-to-top" class="circled" href="javascript:void(0);" data-visible-offset="800"></a>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-2.2.4.min.js"><\/script>')</script>
+
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="js/main.min.js"></script>
+		
+	</body>
+</html>
